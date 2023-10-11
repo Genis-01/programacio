@@ -14,7 +14,7 @@ public class App {
         double preuJardi = 0;
         double preuCasa = 0;
         double preuTotal = 0;
-        boolean majorA150;
+        
 
         Scanner sc = new Scanner(System.in); //declara un escaner
 
@@ -28,7 +28,7 @@ public class App {
         preuCasa = metros4Casa * 100;
         preuJardi = metros4Jardi * 55;
         preuTotal = preuCasa + preuJardi;
-        majorA150 = (preuTotal >150);
+        preuTotal = ( metros4Casa>150)? preuTotal : preuTotal * 1.1;
 
 
 
