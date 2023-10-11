@@ -13,14 +13,15 @@ public class App {
         double metros4Casa = 0;
         double preuJardi = 0;
         double preuCasa = 0;
-        double preuTotal = 0;
+        double preuTotal = 0;   // declara las variables
         
 
         Scanner sc = new Scanner(System.in); //declara un escaner
 
-        System.out.println("entra les dos costats");
+        System.out.println("el tamaño de la parcela");
         costat1 = sc.nextDouble();   
-        costat2 = sc.nextDouble();     //pide al usuario las notas de los 3 trimestres
+        System.out.println("x");
+        costat2 = sc.nextDouble();     //pide al usuario el tamaño de la parcela
 
         metros4 = costat1 * costat2;
         metros4Casa = metros4 * 0.8;
@@ -28,11 +29,11 @@ public class App {
         preuCasa = metros4Casa * 100;
         preuJardi = metros4Jardi * 55;
         preuTotal = preuCasa + preuJardi;
-        preuTotal = ( metros4Casa>150)? preuTotal : preuTotal * 1.1;
+        preuTotal = ( metros4Casa>150)? preuTotal * 1.1 : preuTotal ;    //hace los calculos y comprueba si se cumple la condicion del 10%
 
 
 
         
-        System.out.println("la parcela costa " + preuTotal + ", " + preuJardi + " de jardi i " + preuCasa + " de la casa"); //muestra las notas por pantalla
+        System.out.println("la parcela costa " + preuTotal + ", " + preuJardi + " de jardi i " + preuCasa + " de zona edificable"); //muestra las notas por pantalla
     }
 }
