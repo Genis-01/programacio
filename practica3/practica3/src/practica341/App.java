@@ -23,5 +23,6 @@ public class App {
         notavolleti = (primerTrimestre + segonTrimestre + terseTrimestre) / 3;          //calcula las medias
         
         System.out.println("nota al volleti es: " + notavolleti + " i la nota amb desimals es: " + notareal); //muestra las notas por pantalla
+        sc.close();
     }
 }

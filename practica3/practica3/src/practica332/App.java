@@ -21,5 +21,6 @@ public class App {
 
         
         System.out.println(metros+ " metres són " + centimetros + "centímetres o " + kilometros + " quilòmetres."); //muestra el resultado por pantalla
+        sc.close();
     }
 }

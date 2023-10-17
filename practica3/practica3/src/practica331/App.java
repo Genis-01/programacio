@@ -17,5 +17,6 @@ public class App {
         celsius =  ((farenheid - 32) * 5)/9;    //hace los cambios de unidades
         
         System.out.println(farenheid + " farenheid es igual a " + celsius + " centigrados");    //muestra el resultado por pantalla
+        sc.close();
     }
 }

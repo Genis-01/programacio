@@ -1,4 +1,4 @@
-package practica361;
+package practica36a;
 
 import java.util.Scanner;
 
@@ -12,14 +12,15 @@ public class App {
         Scanner sc = new Scanner(System.in); //declara un escaner
 
         System.out.println("escriu un nombre");
-        nombre = sc.nextDouble();   
+        nombre = sc.nextDouble();       //pide y guarda el valor en la variable nombre
            
-
+        nombre=(nombre >= 0) ? nombre : -(nombre); //calcula el valor absoluto
         
 
 
 
         
-        System.out.println(nombre); //muestra las notas por pantalla
+        System.out.println(nombre); //muestra el valor absoluto
+        sc.close();
     }
 }

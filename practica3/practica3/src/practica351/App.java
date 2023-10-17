@@ -35,5 +35,6 @@ public class App {
 
         
         System.out.println("la parcela costa " + preuTotal + ", " + preuJardi + " de jardi i " + preuCasa + " de zona edificable"); //muestra las notas por pantalla
+        sc.close();
     }
 }
