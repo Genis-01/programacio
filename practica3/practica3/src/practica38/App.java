@@ -19,8 +19,9 @@ public class App {
         SeNMul7= nombre + (7-(nombre%7));
         falta= SeNMul7- nombre;
 
-
+        
         
         System.out.println(falta); //muestra las notas por pantalla
+        sc.close();
     }
 }
