@@ -9,7 +9,7 @@ public class App {
         int numeroUser;
         String respuesta;
 
-        //System.out.println(numeroRandom); //mostrar numero 
+        System.out.println(numeroRandom); //mostrar numero 
 
         Scanner sc = new Scanner(System.in); // declara un escaner
 
@@ -18,17 +18,17 @@ public class App {
         System.out.println("intenta adivinar el numero!!!");
         numeroUser = sc.nextInt(); // pide un numero al usuario
 
-        respuesta = (numeroRandom != numeroUser) ? "intentalo de nuevo" : "";
+        respuesta = (numeroRandom != numeroUser) ? numeroRandom >numeroUser? "intentalo de nuevo con un numero mas grande"  : "intentalo de nuevo con un numero mas pequeño": "";
         System.out.println(respuesta);
         numeroUser = (numeroRandom != numeroUser) ? sc.nextInt() : numeroUser;// si el numero entrado anteriormente no
                                                                               // es corecto pide otro
 
-        respuesta = (numeroRandom != numeroUser) ? "intentalo de nuevo" : "";
+        respuesta = (numeroRandom != numeroUser) ? numeroRandom >numeroUser? "intentalo de nuevo con un numero mas grande"  : "intentalo de nuevo con un numero mas pequeño": "";
         System.out.println(respuesta);
         numeroUser = (numeroRandom != numeroUser) ? sc.nextInt() : numeroUser;// si el numero entrado anteriormente no
                                                                               // es corecto pide otro
 
-        respuesta = (numeroRandom != numeroUser) ? "intentalo de nuevo" : "";
+        respuesta = (numeroRandom != numeroUser) ? numeroRandom >numeroUser? "intentalo de nuevo con un numero mas grande"  : "intentalo de nuevo con un numero mas pequeño": "";
         System.out.println(respuesta);
         numeroUser = (numeroRandom != numeroUser) ? sc.nextInt() : numeroUser;// si el numero entrado anteriormente no
                                                                               // es corecto pide otro
