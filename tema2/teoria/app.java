@@ -86,6 +86,11 @@ public class app {
                 //continue: se salta la repeticion actual
         
         // bucles anidados
+
+    //funciones 
+
+        //static int numero = 0;
+        //public static void 'nombre de la funcion'(){}
         
 
                     
