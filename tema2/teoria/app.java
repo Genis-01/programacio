@@ -1,5 +1,7 @@
 package teoria;
 
+import java.util.Arrays;
+
 public class app {
     public static void main(String[] args) {
 
@@ -91,10 +93,74 @@ public class app {
 
         //static int numero = 0;
         //public static void 'nombre de la funcion'(){}
-        
 
+
+    // arrays
+
+
+    // for each;
+
+        // String [] ciudades = {"barcelona", "madrid", "valencia"};
                     
+        // for (String ciudad : ciudades) {
+        //     System.out.println("ciudad:" + ciudad);
 
+        // }
+
+    //equals(opject o)
+
+            // int[] numeros = {1,2,3,4};
+            // int[] otrosNumeros = {1,2,3,4};
+
+            
+
+            // boolean sonIguales = Arrays.equals(otrosNumeros, numeros);
+            
+            // System.out.println(sonIguales);
         
+    //toString
+
+            // int[] numeros = {1,2,3,4};
+            // String arrayComoCadena = Arrays.toString(numeros);
+            
+            // System.out.println(arrayComoCadena);
+
+
+    //sort()
+            // int[] numeros = {1,5,4,2,3};
+            // System.out.println(Arrays.toString(numeros));
+            // Arrays.sort(numeros);
+            // System.out.println(Arrays.toString(numeros));
+    
+    //binarySearch
+            // int[] numeros = {1,2,3,4,5};
+            // int indice = Arrays.binarySearch(numeros, 3);
+            // System.out.println(indice);
+
+
+    //fill()
+            // int[] numeros = new int[5];
+            // Arrays.fill(numeros, 0);
+            // for (int numero : numeros) {
+            //     System.out.println(numero);
+            // }
+
+    //copyOf()
+            // int[] numeros = {1,2,3,4,5};
+            // int[] copia = Arrays.copyOf(numeros, 3);
+
+            // for (int numero : copia) {
+            //     System.out.println(numero);
+            // }
+
+    // copyOfRange
+        
+            // int[] numeros = {1,2,3,4,5};
+            // int[] copia = Arrays.copyOfRange(numeros, 1 ,4);
+                    
+            // for (int numero : copia) {
+            //     System.out.println(numero);
+            // }
     }
+
 }
