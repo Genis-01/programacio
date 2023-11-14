@@ -8,13 +8,39 @@ public class activitat_4_6 {
     public static void main(String[] args) {
 
         int numero;
+        int resto;
+        int raiz;
         double resultadoRaiz;
 
-        numero = PideYScaneaint("escribe un numero");
+
+        System.out.println(CajaDeHastag("este programa aprocsima a la raiz cuadrada mas cercana y muestra el resultado y el resto"));
+
+        numero = PideYScaneaint(CajaDeHastag("escribe un numero"));//pide un numero al usuario
+
 
         resultadoRaiz = Math.sqrt(numero);
+        raiz = numero;
+        while (!doubleTieneDecimales(resultadoRaiz)) {
+            
+            raiz--;
+            resultadoRaiz = Math.sqrt(raiz);
+            
 
-        System.out.println(resultadoRaiz);
+        }//aproxima a la raiz mas cercana
+            
+        resto = numero - raiz; //calcula el resto
+       
+        System.out.println("la raiz mas cercana es: "+raiz+" = "+resultadoRaiz +" y nos queda un resto de: "+resto);//muestra por pantalla toda la informacion
+
+    }
+
+    public static boolean doubleTieneDecimales(double numero){
+        int numeroInt = (int)numero;
+        if (numero-numeroInt==0) {
+            return true;
+        }else{
+            return false;
+        }
 
     }
 
