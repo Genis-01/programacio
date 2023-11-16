@@ -1,8 +1,8 @@
 package practica_4_7;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class activitat_4_7_it {
+public class activitat_4_7_re {
 
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
@@ -18,15 +18,33 @@ public class activitat_4_7_it {
 
         
 
-        resultado = base;
+        resultado = Elevar(base, exponente, base);
 
-        for (int i = 1; i < exponente; i++) {
-            resultado = resultado * base;
-        }
+        
 
         System.out.println(resultado);
 
         sc.close();
+    }
+
+    public static double Elevar(double base, int exponente, double a){
+
+
+        double resultado= a;
+
+        if(exponente>1){
+
+            resultado = a;
+            resultado = resultado * base;
+            
+            exponente--;
+            
+            resultado = Elevar(base, exponente,resultado);
+           
+        }else{
+            return resultado;
+        }
+        return resultado;
     }
 
     public static double PedirNumeroReal(String mensaje) {
@@ -99,5 +117,5 @@ public class activitat_4_7_it {
             System.out.println(E);
         }
     }
-
+    
 }
