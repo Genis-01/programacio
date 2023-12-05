@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Compte_Corrent {
     String dni;
-    String nombre;
-    double saldo;
+    public String nombre;
+    private double saldo;
+
     public static Scanner sc = new Scanner(System.in);
 
     Compte_Corrent(){
