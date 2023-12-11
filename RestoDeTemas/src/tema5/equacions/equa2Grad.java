@@ -36,7 +36,14 @@ public class equa2Grad {
 
             return solucion;
 
-        } else if (b == 0){
+        } else if (b == 0 && c == 0) {
+            
+            double[] solucion = {0};
+
+            return solucion;
+
+        }
+         if (b == 0){
             
             double paso1;
             double paso2;
@@ -48,17 +55,11 @@ public class equa2Grad {
 
             return solucion;
 
-        } else if (c == 0) {
+        } else {
             
             double[] solucion = {0,-(b/a)};
 
             return solucion;
-        }else {
-            
-            double[] solucion = {0};
-
-            return solucion;
-
         }
 
 
