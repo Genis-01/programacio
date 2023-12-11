@@ -17,6 +17,9 @@ public class equa2Grad {
 
 
     public double [] resolver(){
+        if ((b * b - 4 * a * c) < 0 ) {
+            System.out.println("el resultado no es un numero real");
+        }
 
         if (b != 0 && c != 0) {
 

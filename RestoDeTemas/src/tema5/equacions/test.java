@@ -4,7 +4,7 @@ public class test {
 
     public static void main(String[] args) {
 
-        equa2Grad a = new equa2Grad(6,100,6);
+        equa2Grad a = new equa2Grad(6,1,6);
 
         double [] solucion = a.resolver();
 
