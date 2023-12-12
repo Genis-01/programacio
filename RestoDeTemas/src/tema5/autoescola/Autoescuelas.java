@@ -6,7 +6,7 @@ public class Autoescuelas {
             System.out.println("el alumno ya tiene el carnet");
             return true;
         } else {
-            if (Math.random() == 0) {
+            if (Math.random() < .5) {
                 return false;
             } else {
                 return true;
@@ -20,7 +20,7 @@ public class Autoescuelas {
             System.out.println("el alumno ya tiene el carnet");
             return true;
         } else {
-            if (Math.random() == 0) {
+            if (Math.random() < .5) {
                 return false;
             } else {
                 return true;
