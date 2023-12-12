@@ -11,7 +11,7 @@ public class Alumnos {
     Autoescuelas autoescuela;
 
     
-    public alumnos(String nom, Autoescuelas autoescuela ) {
+    public Alumnos(String nom, Autoescuelas autoescuela ) {
         this.nom = nom;
         this.intentsTeoric = 0;
         this.intentsPractic = 0;
