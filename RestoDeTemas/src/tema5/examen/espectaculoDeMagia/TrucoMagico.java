@@ -7,7 +7,7 @@ public class TrucoMagico {
     private String nombre;
     private int dificultad;
     private double espectacularidad;
-    private static int contadorTrucos;
+    private static int contadorTrucos = 0;
     private double impacto;
     
     
