@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "RestoDeTemas\\src"
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
+}
