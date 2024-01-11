@@ -47,16 +47,7 @@ public class HoraExacta extends Hora {
 
     // comprueba si las dos horas son iguales
     public boolean equals(HoraExacta hora) {
-        if (this.hora == hora.hora) {
+        return (this.hora == hora.hora && this.minuto == hora.minuto && this.segundo < hora.segundo);
 
-            if (this.minuto == hora.minuto) {
-                return this.segundo == hora.segundo;
-            }else{
-                return false;
-            }
-             
-        } else {
-            return false;
-        }
     }
 }
