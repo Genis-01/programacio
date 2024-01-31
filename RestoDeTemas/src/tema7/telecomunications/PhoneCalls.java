@@ -5,6 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class PhoneCalls implements Comparable<PhoneCalls> {
+
+    //declers the necessary attributes
     String phoneNumberC;
     String phoneNumberIn;
     LocalDateTime dateIn;
@@ -13,6 +15,8 @@ public class PhoneCalls implements Comparable<PhoneCalls> {
     boolean outgoing;
     double [] fees = {1, 2.5, 0.5, 0.3, 0.6 };
 
+
+    //construct to initialize all variables
     public PhoneCalls(String phoneNumberC, String phoneNumberIn, String dateIn, String dateOut,
             tema7.telecomunications.zone zone, boolean outgoing) {
 
@@ -30,10 +34,12 @@ public class PhoneCalls implements Comparable<PhoneCalls> {
 
     }
 
+    //calculates the duration of the phone call
     public long duration() {
         return this.dateIn.until(this.dateOut, ChronoUnit.MINUTES);
     }
 
+    //calculates the price of the phone call
     public double price() {
         if (outgoing) {
             double fee = this.fees[zone.ordinal()];
@@ -46,6 +52,7 @@ public class PhoneCalls implements Comparable<PhoneCalls> {
         }
     }
 
+    //compares tow phone calls first by nomber and then by date
     public int compareTo(PhoneCalls phoneCalls) {
         if (this.phoneNumberC.equals(phoneCalls.phoneNumberC)) {
             return this.dateIn.compareTo(phoneCalls.dateIn);
