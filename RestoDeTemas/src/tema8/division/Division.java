@@ -17,6 +17,7 @@ public class Division {
             Scanner scanner = new Scanner(System.in);
             this.dividendo = scanner.nextInt();
             this.cociente = this.divisor / this.dividendo;
+            scanner.close();
         } catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage());
         } catch (InputMismatchException e) {
