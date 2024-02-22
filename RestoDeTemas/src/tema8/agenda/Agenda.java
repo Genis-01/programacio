@@ -77,6 +77,20 @@ public class Agenda {
         System.exit(0);
     }
 
+    public String buscar(String busqueda){
+
+        String resultados = "";
+        for (Contacto c : agenda) {
+            
+            if (c != null) {
+                if (c.nombre.contains(busqueda)) {
+                    resultados += c.toString();  
+                }
+            }
+        }
+        return resultados;
+    }
+
     @Override
     public String toString() {
         String contenido = "";

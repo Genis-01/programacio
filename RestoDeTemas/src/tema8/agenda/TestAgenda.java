@@ -8,14 +8,16 @@ public class TestAgenda {
         Agenda a = new Agenda();
         boolean b = true;
         int opcion;
+        Scanner sc = new Scanner(System.in);
         do {
             System.out.println("1. Nou contacte\n" +
                     "2. Buscar per nom\n" +
                     "3. Mostrar tots\n" +
                     "4. Sortir");
-            Scanner sc = new Scanner(System.in);
+                    
             try {
                 opcion = sc.nextInt();
+                sc.nextLine();
                 switch (opcion) {
                     case 1:
                         String nombre;
@@ -29,7 +31,11 @@ public class TestAgenda {
                         a.nuevoContacto(nombre, numero);
                         break;
                     case 2:
+                        System.out.println("escribe la busqueda");
+                        System.out.println(a.buscar(sc.nextLine()));
 
+                        System.out.println("intro para ir al menu");
+                        sc.nextLine();
                         break;
                     case 3:
                         System.out.println(a.toString());
@@ -46,8 +52,8 @@ public class TestAgenda {
             } catch (Exception e) {
                 System.out.println("valor invalido");
             }
-            sc.close();
 
         } while (b);
+        sc.close();
     }
 }
