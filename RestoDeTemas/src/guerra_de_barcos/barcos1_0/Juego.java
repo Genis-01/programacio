@@ -1,8 +1,18 @@
 package guerra_de_barcos.barcos1_0;
 
 import java.util.Scanner;
+import herramientas.*;
 
 public class Juego {
+
+    String filas;
+    String colubnas;
+
+    public Juego() {
+        this.filas = Ficheros.leerLinea("RestoDeTemas\\src\\guerra_de_barcos\\barcos1_0\\coordenadas", 2);
+        this.colubnas = Ficheros.leerLinea("RestoDeTemas\\src\\guerra_de_barcos\\barcos1_0\\coordenadas", 1);
+
+    }
 
     public TipoBarco elegirBarco() {
         int eleccion;
@@ -25,34 +35,117 @@ public class Juego {
 
             case 2:
                 return TipoBarco.SUBMARINO;
-                
+
             case 3:
                 return TipoBarco.DESTRUCTORE;
-                
+
             case 4:
                 return TipoBarco.FRAGATA;
-                
 
             default:
                 return elegirBarco();
-                
+
         }
     }
 
-    public void elegirPosicionBarco() {
-        System.out.println("================================================");
-        System.out.println("elige la linea en la que quieres colocar el barco");
-        System.out.println("================================================");
-        
+    public String pedirX() {
+        Scanner sc = new Scanner(System.in);
+        String x;
+
+        System.out.println("===================================================");
+        System.out.println("elige la colubna en la que quieres colocar el barco");
+        System.out.println("===================================================");
+
+        x = sc.nextLine();
+
+        if (x.length() == 1) {
+            if (this.colubnas.contains(x)) {
+                sc.close();
+                return x;
+            } else {
+                System.out.println("la posicion introducida no es valida");
+                return this.pedirX();
+            }
+        } else {
+            System.out.println("la posicion introducida no es valida");
+            return this.pedirX();
+        }
 
     }
 
-    public void colocarBarco(Tablero tablero){
-        
+    public String pediry() {
+        Scanner sc = new Scanner(System.in);
+        String y;
 
-        TipoBarco barco = elegirBarco();
+        System.out.println("================================================");
+        System.out.println("elige la fila en la que quieres colocar el barco");
+        System.out.println("================================================");
 
+        y = sc.nextLine();
+
+        if (y.length() == 1) {
+            if (this.filas.contains(y)) {
+                sc.close();
+                return y;
+            } else {
+                System.out.println("la posicion introducida no es valida");
+                return this.pediry();
+            }
+        } else {
+            System.out.println("la posicion introducida no es valida");
+            return this.pediry();
+
+        }
 
     }
+
+    public boolean elegirOrientacion() {
+        boolean orientacion;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("====================");
+        System.out.println("elige la orientacion");
+        System.out.println("1. vertical");
+        System.out.println("2. horizontal");
+        System.out.println("====================");
+
+        try {
+
+            switch (sc.nextInt()) {
+                case 1:
+                    orientacion = true;
+                    break;
+
+                case 2:
+                    orientacion = false;
+                    break;
+
+                default:
+                    System.out.println("la opcion introducida no es valida");
+                    return elegirOrientacion();
+            }
+        } catch (Exception e) {
+            System.out.println("la opcion introducida no es valida");
+            return elegirOrientacion();
+        }
+
+        sc.close();
+        return orientacion;
+    }
+
+    public String[] elegirPosicionBarco(Tablero tablero) {
+
+        
+
+        String posicion[] = new String[] { pedirX(), pediry(), };
+        return posicion;
+    }
+
+    // public void colocarBarco(Tablero tablero) {
+
+    // TipoBarco barco = elegirBarco();
+
+    // }
 
 }
