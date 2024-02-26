@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+
 public class FicherosBinarios {
 
 
@@ -44,6 +45,17 @@ public class FicherosBinarios {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void escribirFicheroArrayObjectToObject(Object arrayObjeto[], String fichero){
+        
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fichero))) {
+            oos.writeObject(arrayObjeto);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    
 
 
 }

@@ -59,17 +59,18 @@ public class Juego {
         x = sc.nextLine();
 
         if (x.length() == 1) {
-            if (this.colubnas.contains(x)) {
-                sc.close();
-                return x;
-            } else {
+            if (!this.colubnas.contains(x)) {
                 System.out.println("la posicion introducida no es valida");
-                return this.pedirX();
+                x = this.pedirX();
+                
+                
             }
         } else {
             System.out.println("la posicion introducida no es valida");
-            return this.pedirX();
+            x = this.pedirX();
         }
+        sc.close();
+        return x; 
 
     }
 
@@ -84,18 +85,17 @@ public class Juego {
         y = sc.nextLine();
 
         if (y.length() == 1) {
-            if (this.filas.contains(y)) {
-                sc.close();
-                return y;
-            } else {
+            if (!this.filas.contains(y)) {
                 System.out.println("la posicion introducida no es valida");
-                return this.pediry();
+                y = this.pediry();
             }
         } else {
             System.out.println("la posicion introducida no es valida");
-            return this.pediry();
+            y = this.pediry();
 
         }
+        sc.close();
+        return y;
 
     }
 
@@ -123,11 +123,11 @@ public class Juego {
 
                 default:
                     System.out.println("la opcion introducida no es valida");
-                    return elegirOrientacion();
+                    orientacion = elegirOrientacion();
             }
         } catch (Exception e) {
             System.out.println("la opcion introducida no es valida");
-            return elegirOrientacion();
+            orientacion = elegirOrientacion();
         }
 
         sc.close();

@@ -10,7 +10,7 @@ public class Test {
         // t2.mostrar();
 
         Juego j = new Juego();
-        System.out.println(j.elegirOrientacion());
+        System.out.println(j.pedirX());
 
     }
         

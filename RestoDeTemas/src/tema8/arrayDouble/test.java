@@ -1,7 +1,7 @@
 package tema8.arrayDouble;
 
 import java.util.Scanner;
-import herramientas.*;
+// import herramientas.*;
 
 public class test {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class test {
 
 
 
-                    FicherosBinarios.escribirFicheroArrayDuobleToObject(numeros, "patata");
+                    // FicherosBinarios.escribirFicheroArrayDuobleToObject(numeros, "patata");
                     break;
                 case 2:
 
