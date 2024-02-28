@@ -9,6 +9,9 @@ public class testClientes {
         boolean b = true;
         Scanner sc = new Scanner(System.in);
 
+        while (b) {
+            
+        
         
             System.out.println("1. Añadir cliente\n" +
                     "2. Modificar Datos\n" +
@@ -44,7 +47,7 @@ public class testClientes {
                         System.out.println(a.toString());
                         break;
                     case 5:
-                        a.salir();
+                        b= false;
                         break;
 
                     default:
@@ -55,7 +58,7 @@ public class testClientes {
                 System.out.println("valor invalido");
             }
             
-            
+        }
         
         sc.close();
         a.salir();

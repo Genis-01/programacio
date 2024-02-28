@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class App {
     Cliente clientes[];
+    Scanner sc = new Scanner(System.in);
 
     public App() {
 
@@ -44,7 +45,7 @@ public class App {
     public int buscarCliente(){
         int c = -1;
         String busqueda;
-        Scanner sc = new Scanner(System.in);
+        
         System.out.println("escribe el DNI del cliente");
         busqueda = sc.nextLine();
         
@@ -59,7 +60,7 @@ public class App {
             System.out.println("no se ha encontrado el cliente");
             c = buscarCliente();
         }
-        sc.close();
+        
         return c;
     }
     public void modificarCliente(){
@@ -67,13 +68,13 @@ public class App {
                 String nombre;
                 String numeo;
 
-                Scanner sc = new Scanner(System.in);
+                
 
                 System.out.println("escrebe el nombre del cliente");
                 nombre = sc.nextLine();
                 System.out.println("escrebe el nuero del cliente");
                 numeo = sc.nextLine();
-                sc.close();
+                
                 clientes[cliente] = new Cliente(clientes[cliente].dni, nombre, numeo);
     }
 
@@ -117,6 +118,7 @@ public class App {
 
     public void salir() {
 
+        sc.close();
         System.out.println(Arrays.toString(clientes));
 
         escribirFicheroArrayObjectToObject(clientes, "RestoDeTemas\\src\\tema8\\clientes\\clientes.data");
