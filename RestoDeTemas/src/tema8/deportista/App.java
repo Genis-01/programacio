@@ -166,7 +166,7 @@ public class App {
         String resultado = "";
         for (Deportista deportista : deportistas) {
             String capitalizado = capitalizar(deportista.getDeporte().name().toLowerCase());
-            resultado += deportista.toString().replace(deportista.getDeporte().name(), capitalizado);
+            resultado += deportista.toString().replace(deportista.getDeporte().name(), capitalizado) + "\n";
 
         }
         return resultado;

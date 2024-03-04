@@ -11,7 +11,9 @@ public class Test {
         Scanner sc = new Scanner(System.in);
 
         while (b1) {
-
+            
+            b2 = true;
+        
             System.out.println("1. Alta\n" +
                     "2. Baja\n" +
                     "3. Modificar datos\n" +
@@ -31,13 +33,13 @@ public class Test {
                         Deportes deporte = null;
                         int opcion2;
 
-                        System.out.println("escribe el DNI del cliente");
+                        System.out.println("escribe el DNI del deportista");
                         dni = sc.nextLine();
-                        System.out.println("escribe el nombre del cliente");
+                        System.out.println("escribe el nombre del deportista");
                         nombre = sc.nextLine();
-                        System.out.println("escribe el numero del cliente");
+                        System.out.println("escribe el numero del deportista");
                         numero = sc.nextLine();
-                        System.out.println("escribe la fecha de nacimiento del cliente");
+                        System.out.println("escribe la fecha de nacimiento del deportista");
                         fecha = sc.nextLine();
 
                         while (b2) {
