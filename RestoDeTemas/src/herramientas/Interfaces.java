@@ -33,4 +33,12 @@ public class Interfaces {
 
         return opcionSeleccionada;
     }
+
+    public static void cls() {// limpia la consola
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (Exception E) {
+            System.out.println(E);
+        }
+    }
 }
