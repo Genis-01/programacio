@@ -12,8 +12,12 @@ public class TiendaDeFrutas {
     }
 
     public void eliminarFruta(String fruta) {
-        Fruta f = new Fruta(fruta, 0.0);
-        frutas.remove(f);
+        Iterator<Fruta> it = frutas.iterator();
+        while (it.hasNext()) {
+            if (it.next().nombre.equals(fruta)) {
+                it.remove();
+            }
+        }
     }
 
     public Double getPrecioTotal(){

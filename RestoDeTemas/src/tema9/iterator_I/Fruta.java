@@ -12,7 +12,6 @@ public class Fruta {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return "Fruta: " + nombre + ", precio: " + precio;
         }
 }

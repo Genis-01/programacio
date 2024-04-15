@@ -27,12 +27,13 @@ public class TestTienda {
         t.anyadirFruta("naranja", 3.0);
         t.anyadirFruta("sandia", 5.0);
         t.anyadirFruta("melon", 4.0);
+        t.eliminarFruta("naranja");
     }
 
     public static void iterar(){
         Iterator<Fruta> it = t.iterator();
         while (it.hasNext()) {
-            System.out.println(it.next().toString());
+            System.out.println(it.next());
         }
     
     }
