@@ -1,6 +1,8 @@
 package tema9.marvel;
 
-public class Personaje {
+import java.io.Serializable;
+
+public class Personaje implements Serializable{
 
     String nombre;
     String alias;

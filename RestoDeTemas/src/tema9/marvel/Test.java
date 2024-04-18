@@ -1,12 +1,16 @@
 package tema9.marvel;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import herramientas.*;
 
-public class Test {
+public class Test implements Serializable {
     static ArrayList<Personaje> personajes = new ArrayList<Personaje>();
     static List<Superpoder> superpoderes = new ArrayList<Superpoder>();
     static Map<Personaje, ArrayList<Superpoder>> supereroe = new HashMap<Personaje, ArrayList<Superpoder>>();
@@ -20,7 +24,11 @@ public class Test {
 
         // Funciones.escribirFichero(personajes, "RestoDeTemas\\src\\tema9\\marvel\\personajes.data");
         // System.out.println(1);
-        personajes = Funciones.leerFichero("RestoDeTemas\\src\\tema9\\marvel\\personajes.data");
+
+        
+        
+
+        personajes.addAll(Funciones.leerFichero("RestoDeTemas\\src\\tema9\\marvel\\personajes.data"));
         System.out.println(1);
         
     }
