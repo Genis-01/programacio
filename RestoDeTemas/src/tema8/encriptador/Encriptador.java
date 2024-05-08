@@ -1,7 +1,7 @@
 package tema8.encriptador;
 
 
-import herramientas.Ficheros;
+import herramientasOld.Ficheros;
 
 
 public class Encriptador {

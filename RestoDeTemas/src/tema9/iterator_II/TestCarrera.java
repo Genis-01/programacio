@@ -4,7 +4,7 @@ package tema9.iterator_II;
 
 import java.util.Iterator;
 
-import herramientas.*;
+import herramientasOld.*;
 public class TestCarrera {
     
     static Carrera carrera = new Carrera();

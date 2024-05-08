@@ -2,7 +2,7 @@ package tema9.iterator_I;
 
 import java.util.Iterator;
 
-import herramientas.*;
+import herramientasOld.*;
 
 public class TestTienda {
     static TiendaDeFrutas t = new TiendaDeFrutas();

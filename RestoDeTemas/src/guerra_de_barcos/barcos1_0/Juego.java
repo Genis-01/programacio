@@ -1,7 +1,7 @@
 package guerra_de_barcos.barcos1_0;
 
 import java.util.Scanner;
-import herramientas.*;
+import herramientasOld.*;
 
 public class Juego {
 

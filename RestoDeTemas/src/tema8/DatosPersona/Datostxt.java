@@ -1,6 +1,6 @@
 package tema8.DatosPersona;
 
-import herramientas.*;
+import herramientasOld.*;
 
 public class Datostxt {
     

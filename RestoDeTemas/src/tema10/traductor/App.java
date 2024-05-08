@@ -1,7 +1,6 @@
 package tema10.traductor;
 
-import herramientas.*;
-import org.w3c.dom.ls.LSOutput;
+import herramientasOld.*;
 
 import java.util.Scanner;
 

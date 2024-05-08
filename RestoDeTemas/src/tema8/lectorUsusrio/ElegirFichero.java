@@ -2,7 +2,7 @@ package tema8.lectorUsusrio;
 
 import java.io.File;
 import java.util.Scanner;
-import herramientas.Ficheros;
+import herramientasOld.Ficheros;
 
 public class ElegirFichero {
 

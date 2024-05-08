@@ -1,14 +1,11 @@
 package tema9.marvel;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import herramientas.*;
+import herramientasOld.*;
 
 public class Test implements Serializable {
     static ArrayList<Personaje> personajes = new ArrayList<Personaje>();

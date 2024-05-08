@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-import herramientas.*;
+import herramientasOld.*;
 import tema9.examen21_22.Procedimiento.*;
 
 public class Test {
