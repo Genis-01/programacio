@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="funcionesAuxiliares:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/funcionesAuxiliares_jar</output-path>
+    <root id="archive" name="funcionesAuxiliares.jar">
+      <element id="module-output" name="funcionesAuxiliares" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,16 @@
+los flujos pueden ser de entrada o de salida
+entrada: recuperar datos
+salida: guardar datos
+flujos de Texto: asociados a ficheros de texto o a otras fuentes
+flujos Binarios: transmiten bites entre 0 255 
+    
+siempre de produciran errores
+
+en java normalmente los errores se llaman excepciones
+
+cuando se produze un Error se crea un objeto Throwable que tiene informacion sobre el error
+lo entrega a la maquina virtuel, puede ser capturado por el programa y analizaso para dar una respuesta
+    
+la clase Error es hija de de Throwable
+no vamos a tener en cuenta los errores de tiemp de ejecucion
+nos vamos a centrar en los errores de la clase Exception que tambien es una clase hija de Throwable

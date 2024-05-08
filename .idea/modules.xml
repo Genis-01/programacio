@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestoDeTemas/RestoDeTemas.iml" filepath="$PROJECT_DIR$/RestoDeTemas/RestoDeTemas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examenT9/examenT9.iml" filepath="$PROJECT_DIR$/examenT9/examenT9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funcionesAuxiliares/funcionesAuxiliares.iml" filepath="$PROJECT_DIR$/funcionesAuxiliares/funcionesAuxiliares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista de la compra/lista de la compra.iml" filepath="$PROJECT_DIR$/lista de la compra/lista de la compra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/programacio.iml" filepath="$PROJECT_DIR$/.idea/programacio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programame/programame.iml" filepath="$PROJECT_DIR$/programame/programame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t1-2/t1-2.iml" filepath="$PROJECT_DIR$/t1-2/t1-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t1-2/tema1/tema1.iml" filepath="$PROJECT_DIR$/t1-2/tema1/tema1.iml" />
+    </modules>
+  </component>
+</project>
