@@ -21,8 +21,8 @@ public class Test {
 
 
     static <T> void paraCada(T[] arrayP, Consumer<T> c) {
-        for (int i = 0; i < arrayP.length; i++) {
-            c.accept(arrayP[i]);
+        for (T t : arrayP) {
+            c.accept(t);
         }
 
 
