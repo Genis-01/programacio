@@ -2,7 +2,7 @@ package tema10.ac5;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,7 +18,7 @@ public class Test {
             numeros.add(Random.numeroInteger(100,1000));
         }
 
-        Function<Integer, Boolean> de200a800 = num -> num >= 200 && num <= 800;
+        Predicate<Integer> de200a800 = num -> num >= 200 && num <= 800;
 
 
 
@@ -41,7 +41,23 @@ public class Test {
 
         ArrayList<Integer> numerosPrimariosOrdenInvertido = a3.filter(Test::esPrimo).sorted(Comparator.reverseOrder()).collect(Collectors.toCollection(ArrayList::new));
 
+        Stream<Integer> a4= numeros.stream();
 
+        a4.filter(Test::esPrimo).filter(de200a800).forEach(System.out::println);
+
+
+
+        for (Integer num : numerosPrimos) {
+            System.out.println(num);
+        }
+
+        for (Integer num : numerosPrimosOrdenados) {
+            System.out.println(num);
+        }
+
+        for (Integer num : numerosPrimariosOrdenInvertido) {
+            System.out.println(num);
+        }
     }
 
 
