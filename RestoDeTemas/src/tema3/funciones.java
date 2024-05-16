@@ -8,6 +8,7 @@ public class funciones {
             System.out.println(E);
         }
     }
+
     public static String CajaDeHastag(String mensaje) {
         String hastag = "";
         for (int i = (mensaje.length() + 4); i > 0; i--) {
