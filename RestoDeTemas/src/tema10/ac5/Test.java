@@ -3,6 +3,7 @@ package tema10.ac5;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import numeros.*;
@@ -20,19 +21,25 @@ public class Test {
         Function<Integer, Boolean> de200a800 = num -> num >= 200 && num <= 800;
 
 
+
         Stream<Integer> a1= numeros.stream();
 //        a1.filter(Test::esPrimo).forEach(System.out::println);
 
+        Integer[] numerosPrimos = a1.filter(Test::esPrimo).toArray(Integer[]::new);
 
         System.out.println();
 
         Stream<Integer> a2= numeros.stream();
 //        a2.filter(Test::esPrimo).sorted().forEach(System.out::println);
 
+        ArrayList<Integer> numerosPrimosOrdenados = (ArrayList<Integer>) a2.filter(Test::esPrimo).sorted().toList();
+
         System.out.println();
 
         Stream<Integer> a3= numeros.stream();
 //        a3.filter(Test::esPrimo).sorted(Comparator.reverseOrder()).forEach(System.out::println);
+
+        ArrayList<Integer> numerosPrimariosOrdenInvertido = a3.filter(Test::esPrimo).sorted(Comparator.reverseOrder()).collect(Collectors.toCollection(ArrayList::new));
 
 
     }
