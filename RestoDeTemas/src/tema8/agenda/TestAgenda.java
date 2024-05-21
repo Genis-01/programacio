@@ -23,7 +23,7 @@ public class TestAgenda {
                         String nombre;
                         String numero;
 
-                        System.out.println("escribe el nombre del contacto");
+                        System.out.println("escribe el nombre del ");
                         nombre = sc.nextLine();
                         System.out.println("escribe el numero del contacto");
                         numero = sc.nextLine();
